@@ -1,20 +1,15 @@
 pipeline {
     agent any
         stages {
-        stage ('check'){
-            steps{
-                git 'https://github.com/Hoopsier/OTP-BS-OTHER.git'
-            }
-        }
         stage ('build'){
             steps{
-                bat 'mvn clean install'
+                sh 'mvn clean install'
             }
         }
 
         stage('test') {
             steps{
-                bat 'mvn test'
+                sh 'mvn test'
             }
         }
         stage('jacoco'){
