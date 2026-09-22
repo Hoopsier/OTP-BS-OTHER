@@ -3,6 +3,7 @@ pipeline {
     tools{
         maven "Maven3"
         jdk "jdk21"
+        git "default"
       }
         stages {
           stage ('check'){
