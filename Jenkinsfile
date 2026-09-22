@@ -9,7 +9,7 @@ pipeline {
           stage ('check'){
             steps{
               git branch: 'main',
-        url: 'https://github.com/Hoopsier/OTP-BS-OTHER.git' 'https://github.com/Hoopsier/OTP-BS-OTHER.git'
+        url: 'https://github.com/Hoopsier/OTP-BS-OTHER.git'
             }
         }
         stage ('build'){
